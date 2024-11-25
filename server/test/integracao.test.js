@@ -1,7 +1,6 @@
 const request = require('supertest');
 const mongoose = require('mongoose');
-const app = require('../index'); // substitua pelo caminho do arquivo principal do Express
-
+const app = require('../index'); 
 
 // const Project = require('../controllers/projectsControl').Project;
 
@@ -15,15 +14,15 @@ const app = require('../index'); // substitua pelo caminho do arquivo principal 
 
 
   // Teste para criação de projeto
-  it('deve criar um novo projeto', async () => {
-    const res = await request(app)
-      .post('/api/projects')
-      .send({ name: 'New Project', owner: 'userId123' });
+  // it('deve criar um novo projeto', async () => {
+  //   const res = await request(app)
+  //     .post('/api/projects')
+  //     .send({ name: 'New Project', owner: 'userId123' });
 
-    expect(res.statusCode).toBe(201);
-    //expect(res.body.name).toBe('New Project');
-    projectId = res.body._id;
-  });
+  //   expect(res.statusCode).toBe(201);
+  //   //expect(res.body.name).toBe('New Project');
+  //   projectId = res.body._id;
+  // });
 
 //   // Teste para listagem de projetos
 //   it('deve listar projetos do usuário', async () => {

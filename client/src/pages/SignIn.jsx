@@ -119,6 +119,7 @@ const SignInPage = () => {
           <Button
             type="submit"
             className="px-2 py-1 bg-gray-800 text-white rounded-lg"
+            data-cy="botao-login"
           >
             Sign In
           </Button>
